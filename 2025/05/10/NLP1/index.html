@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
 <meta property="og:site_name" content="SAIの博客">
 <meta property="og:description" content="Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing摘要：传统的监督学习采用直接输入与直接输出结果的方式来完成任务。但是基于prompt的学习能够只改变prompt模板就能得到从预测生成的文本中分离出来的结果。这种方式明显更具有通用性，前提是">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://m.qpic.cn/psc?/V5289XhC1n459g1f0Ki83brGja4ClKNc/TmEUgtj9EK6.7V8ajmQrEAjRpDKnVrkFkT4kLdvHJ.dsGETD8549OTLueMq6eYyky3IlxQJz7CSSiqzyNjpI6XTO7G0daxf*HhovwkDacWM!/b&bo=UAddA1AHXQMDByI!&rf=viewer_4">
+<meta property="og:image" content="https://img.picui.cn/free/2025/05/10/681f054e91106.png">
 <meta property="article:published_time" content="2025-05-10T06:56:35.000Z">
-<meta property="article:modified_time" content="2025-05-10T07:47:15.182Z">
+<meta property="article:modified_time" content="2025-05-10T07:51:11.473Z">
 <meta property="article:author" content="SAI">
 <meta property="article:tag" content="prompt engine">
 <meta property="article:tag" content="NLP">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://m.qpic.cn/psc?/V5289XhC1n459g1f0Ki83brGja4ClKNc/TmEUgtj9EK6.7V8ajmQrEAjRpDKnVrkFkT4kLdvHJ.dsGETD8549OTLueMq6eYyky3IlxQJz7CSSiqzyNjpI6XTO7G0daxf*HhovwkDacWM!/b&bo=UAddA1AHXQMDByI!&rf=viewer_4"><script>(function() {
+<meta name="twitter:image" content="https://img.picui.cn/free/2025/05/10/681f054e91106.png"><script>(function() {
   if (CONFIG.mode !== 'auto') return
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
@@ -59,7 +59,7 @@ IconifyProviders = {
 <p><strong>LM：语言模型是一种能够计算出任何给定文本片段（观察到的文本数据）作为一个自然、合理的语言序列出现的概率的系统。</strong></p>
 <p>此时重心转向目标工程，具体就是深入思考在特定阶段（预训练或微调）希望模型学习到什么样的能力，根据这个期望，<strong>设计或组合能够有效引导模型学习这些能力的训练任务和相应的数学表达（即损失函数）</strong>。</p>
 <p>到了2021，大家已经不再面对各种特定的任务做微调生成一个新模型，而是用一个大型的pre-train的模型加prompt 做few-shot learning.此时重心来到了<strong>prompt engine</strong>找到最好的prompt</p>
-<h2 id="正式的prompt描述"><a href="#正式的prompt描述" class="headerlink" title="正式的prompt描述"></a>正式的prompt描述</h2><p><img src="http://m.qpic.cn/psc?/V5289XhC1n459g1f0Ki83brGja4ClKNc/TmEUgtj9EK6.7V8ajmQrEAjRpDKnVrkFkT4kLdvHJ.dsGETD8549OTLueMq6eYyky3IlxQJz7CSSiqzyNjpI6XTO7G0daxf*HhovwkDacWM!/b&bo=UAddA1AHXQMDByI!&rf=viewer_4" alt="http:&#x2F;&#x2F;m.qpic.cn&#x2F;psc?&#x2F;V5289XhC1n459g1f0Ki83brGja4ClKNc&#x2F;TmEUgtj9EK6.7V8ajmQrEAjRpDKnVrkFkT4kLdvHJ.dsGETD8549OTLueMq6eYyky3IlxQJz7CSSiqzyNjpI6XTO7G0daxf*HhovwkDacWM!&#x2F;b&amp;bo&#x3D;UAddA1AHXQMDByI!&amp;rf&#x3D;viewer_4" loading="lazy"></p>
+<h2 id="正式的prompt描述"><a href="#正式的prompt描述" class="headerlink" title="正式的prompt描述"></a>正式的prompt描述</h2><p><a target="_blank" rel="noopener" href="https://img.picui.cn/free/2025/05/10/681f054e91106.png"><img src="https://img.picui.cn/free/2025/05/10/681f054e91106.png" alt="image-20250510154247587.png" loading="lazy"></a></p>
 </div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>SAI</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://fatecantkillme.github.io/2025/05/10/NLP1/" title="Pre-train, Prompt, and Predict A Systematic Survey of Prompting Methods in Natural Language Processing">http://fatecantkillme.github.io/2025/05/10/NLP1/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2025/04/25/pytorch&amp;DL/" rel="next" title="pytorch&amp;DL tutorial (LiMu)"><span class="post-nav-text">pytorch&amp;DL tutorial (LiMu)</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2025 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> SAI</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div><div class="live-time"><span>本博客已运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
   setTimeout(blog_live_time, 1000);
   const start = new Date('2025-03-22T00:00:00');
